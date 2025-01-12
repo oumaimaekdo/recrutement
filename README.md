@@ -10,15 +10,6 @@ Fournir aux candidats un moyen de renseigner et de consulter leurs informations 
 Offrir aux recruteurs un accès aux profils des candidats pour faciliter le processus de recrutement.
 Mettre à disposition une documentation API interactive via Swagger pour simplifier l'intégration avec le frontend.
 
-## Table des matières
-- [Prérequis](#prérequis)
-- [Installation](#installation)
-- [Exécution du projet](#exécution-du-projet)
-- [Endpoints API](#endpoints-api)
-- [Swagger API Documentation](#swagger-api-documentation)
-- [Conception UML](#conception-uml)
-- [Suivi du projet](#suivi-du-projet)
-
 ## Prérequis
 
 Avant de pouvoir exécuter le projet, vous devez avoir installé les outils suivants sur votre machine :
