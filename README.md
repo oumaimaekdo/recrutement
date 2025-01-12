@@ -50,20 +50,55 @@ Avant de pouvoir exécuter le projet, vous devez avoir installé les outils suiv
    pip install psycopg2  
    pip install djangorestframework-swagger
 
-4. **Configuratin de la base de données** :  
+4. **Configuration de la base de données** :
 
-Assurez-vous que PostgreSQL est installé et configuré sur votre machine. Créez une base de données et mettez à jour les paramètres de la base de données dans le fichier settings.py de Django sous DATABASES :  
+Assurez-vous que PostgreSQL est installé et configuré sur votre machine. Créez une base de données et mettez à jour les paramètres de la base de données dans le fichier `settings.py` de Django sous `DATABASES` :
 
-   ```python
-   DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'recrutement',
-            'USER': 'postgres',
-            'PASSWORD': 'oumaimaekdo',
-            'HOST': 'localhost',
-            'PORT': '5432',
-        }
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'recrutement',
+        'USER': 'postgres',
+        'PASSWORD': 'oumaimaekdo',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
+}
+```
 
-5. **Appliquer les migrations**
+5. **Appliquer les migrations** :
+
+Pour créer les tables dans la base de données, exécutez la commande suivante :
+
+```bash
+python manage.py migrate
+```
+
+## Execution du projet
+
+1. **Lancer le serveur de développement**
+
+Pour lancer le serveur de développement de Django, exécutez la commande suivante :
+
+```bash
+python manage.py runserver
+```
+
+Vous pouvez accéder à l'API à l'adresse suivante dans votre navigateur : http://127.0.0.1:8000/.
+
+## Endpoints API
+
+La liste complète des endpoints est disponible dans la documentation Swagger. Vous pouvez également les trouver dans le fichier urls.py.
+
+## Swagger API Documentation
+
+Pour accéder à la documentation Swagger de l'API, lancez le serveur et accédez à :
+
+```text
+http://127.0.0.1:8000/swagger/
+```
+
+## Conception UML
+
+
