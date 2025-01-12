@@ -15,7 +15,7 @@ class Recruteur(models.Model):
     nom_entreprise = models.CharField(max_length=100) 
     mail = models.EmailField() 
     numero_telephone = models.CharField(max_length=15) 
-    site_web = models.CharField(max_length=100) 
+    site_web = models.URLField() 
     
     def __str__(self): 
         return f"Entreprise : {self.nom_entreprise}" 
