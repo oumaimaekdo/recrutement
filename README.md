@@ -1,4 +1,4 @@
-# Projet Backend Dev - Plateforme Recrutement
+# Projet Backend Dev - Plateforme Recrutement (Django et Python)
 
 ## Description du projet
 
@@ -171,6 +171,16 @@ Vue recruteur De manière similaire, la vue RecruteurViewSet permet de gérer le
 **URLs**
 
 Le fichier urls.py définit les routes pour l'API. Chaque vue est enregistrée dans un routeur qui expose les endpoints pour les candidats et les recruteurs.
+
+## Diagramme UML
+
+import base64
+
+with open("diagramme_UML.png", "rb") as img_file:
+    encoded_string = base64.b64encode(img_file.read()).decode("utf-8")
+
+# Afficher la chaîne base64
+print(f"data:image/png;base64,{encoded_string}")
 
 ## Auteur
 
